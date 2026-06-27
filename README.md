@@ -46,6 +46,36 @@ Container stoppen:
 docker compose down
 ```
 
+## Start auf einem Linux-Server
+
+Voraussetzungen auf dem Server:
+
+- Docker Engine
+- Docker Compose Plugin
+- Zugriff auf `ghcr.io/jens0102/autista-bewerbertest:latest`
+
+Bei einem privaten GitHub-Repository zuerst mit einem GitHub Token anmelden, das `read:packages` erlaubt:
+
+```bash
+echo "GITHUB_TOKEN" | docker login ghcr.io -u jens0102 --password-stdin
+```
+
+Dann `compose.prod.yml` auf den Server kopieren und starten:
+
+```bash
+docker compose -f compose.prod.yml pull
+docker compose -f compose.prod.yml up -d
+```
+
+Die Anwendung ist danach auf Port `8080` erreichbar. Die SQLite-Datenbank, Logs und Backups liegen im Docker-Volume `autista-storage`.
+
+Update auf eine neue Version:
+
+```bash
+docker compose -f compose.prod.yml pull
+docker compose -f compose.prod.yml up -d
+```
+
 ## Admin
 
 Initial:
