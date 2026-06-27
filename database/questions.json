@@ -1,0 +1,3724 @@
+[
+    {
+        "id": 1,
+        "category": "Installation",
+        "competency": "Systemadministration",
+        "difficulty": 1,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Einleitung \/ S. 1",
+        "type": "single",
+        "question": "Welche JBoss-Version ist für den Betrieb von AutiSta Server 13.1 vorgesehen?",
+        "options": [
+            {
+                "key": "A",
+                "text": "JBoss EAP 8.1.4"
+            },
+            {
+                "key": "B",
+                "text": "JBoss EAP 7.4"
+            },
+            {
+                "key": "C",
+                "text": "WildFly 30"
+            },
+            {
+                "key": "D",
+                "text": "Apache Tomcat 10"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "AutiSta Server ist für den Betrieb unter RedHat JBoss EAP 8.1.4 ausgelegt.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 1
+    },
+    {
+        "id": 2,
+        "category": "Java",
+        "competency": "Technisches Verständnis",
+        "difficulty": 1,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Einleitung \/ S. 1",
+        "type": "single",
+        "question": "Welche Java-Version kommt laut Installationsdokumentation für AutiSta Server zum Einsatz?",
+        "options": [
+            {
+                "key": "A",
+                "text": "OpenJDK 11"
+            },
+            {
+                "key": "B",
+                "text": "RedHat OpenJDK 17.0.18 (64-Bit)"
+            },
+            {
+                "key": "C",
+                "text": "Oracle JDK 21"
+            },
+            {
+                "key": "D",
+                "text": "Java 8"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Für AutiSta Server wird RedHat OpenJDK 17.0.18 (64-Bit) verwendet.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 2
+    },
+    {
+        "id": 3,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux \/ Trust- und Keystore \/ S. 2",
+        "type": "single",
+        "question": "Welche Datei enthält das signierte Schlüsselpaar des AutiSta Servers?",
+        "options": [
+            {
+                "key": "A",
+                "text": "autista.truststore.p12"
+            },
+            {
+                "key": "B",
+                "text": "standalone.xml"
+            },
+            {
+                "key": "C",
+                "text": "autista.keystore.p12"
+            },
+            {
+                "key": "D",
+                "text": "vfst-jboss-config.properties"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Das signierte Schlüsselpaar wird in autista.keystore.p12 gespeichert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 3
+    },
+    {
+        "id": 4,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux \/ Trust- und Keystore \/ S. 2",
+        "type": "single",
+        "question": "Welche Datei enthält Zertifikate von Drittsystemen, zu denen SSL-Verbindungen aufgebaut werden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "server.log"
+            },
+            {
+                "key": "B",
+                "text": "autista.keystore.p12"
+            },
+            {
+                "key": "C",
+                "text": "boot.log"
+            },
+            {
+                "key": "D",
+                "text": "autista.truststore.p12"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "Zertifikate aller Drittsysteme sind im Truststore autista.truststore.p12 abzulegen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 4
+    },
+    {
+        "id": 5,
+        "category": "Konfiguration",
+        "competency": "Technisches Verständnis",
+        "difficulty": 1,
+        "document_ref": "VfSt-JBoss-Configurator \/ Erstellung der standalone.xml \/ S. 19",
+        "type": "single",
+        "question": "Welche Datei wird vom VfSt-JBoss-Configurator automatisch neu erzeugt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "standalone.xml"
+            },
+            {
+                "key": "B",
+                "text": "autista.bat"
+            },
+            {
+                "key": "C",
+                "text": "server.log"
+            },
+            {
+                "key": "D",
+                "text": "create_autista_db_ms.sql"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Der Configurator erstellt die zentrale JBoss-Konfigurationsdatei standalone.xml neu.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 5
+    },
+    {
+        "id": 6,
+        "category": "Datenbanken",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "Installation und Update der Datenbanken \/ Voraussetzungen \/ S. 17",
+        "type": "single",
+        "question": "Welches Encoding wird für die SQL-Skriptdateien gefordert?",
+        "options": [
+            {
+                "key": "A",
+                "text": "ISO-8859-1"
+            },
+            {
+                "key": "B",
+                "text": "UTF-8"
+            },
+            {
+                "key": "C",
+                "text": "Windows-1252"
+            },
+            {
+                "key": "D",
+                "text": "ASCII"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Für die SQL-Skriptdateien ist UTF-8 zu verwenden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 6
+    },
+    {
+        "id": 7,
+        "category": "Datenbanken",
+        "competency": "Technisches Verständnis",
+        "difficulty": 2,
+        "document_ref": "Installation und Update der Datenbanken \/ Einrichtung unter Oracle \/ S. 17",
+        "type": "single",
+        "question": "Welcher Oracle-Zeichensatz ist für die AutiSta-Datenbankinstanz zu verwenden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "WE8MSWIN1252"
+            },
+            {
+                "key": "B",
+                "text": "AL16UTF16"
+            },
+            {
+                "key": "C",
+                "text": "AL32UTF8"
+            },
+            {
+                "key": "D",
+                "text": "UTF8MB4"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Für Oracle ist ausschließlich eine Datenbankinstanz mit Unicode-Zeichensatz AL32UTF8 zu verwenden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 7
+    },
+    {
+        "id": 8,
+        "category": "Monitoring",
+        "competency": "Fehlersuche",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Systemüberwachung \/ S. 36",
+        "type": "single",
+        "question": "Welche Farbe der Systemüberwachung weist auf ein akut zu bearbeitendes Problem hin?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Gelb"
+            },
+            {
+                "key": "B",
+                "text": "Grün"
+            },
+            {
+                "key": "C",
+                "text": "Blau"
+            },
+            {
+                "key": "D",
+                "text": "Rot"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "Rot bedeutet ein akut zu bearbeitendes Problem; Gelb bedeutet prüfen, Grün keine Störung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 8
+    },
+    {
+        "id": 9,
+        "category": "Administration",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Mandanten \/ S. 30",
+        "type": "single",
+        "question": "Was ist in AutiSta ein Mandant?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Ein aktives Standesamt"
+            },
+            {
+                "key": "B",
+                "text": "Ein JBoss-Serverprozess"
+            },
+            {
+                "key": "C",
+                "text": "Ein Datenbankbenutzer"
+            },
+            {
+                "key": "D",
+                "text": "Ein TLS-Zertifikat"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "AutiSta ist mandantenfähig; jedes aktive Standesamt gilt als Mandant.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 9
+    },
+    {
+        "id": 10,
+        "category": "Support",
+        "competency": "Fehlersuche",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Supportdaten \/ S. 38",
+        "type": "single",
+        "question": "Welche Datei protokolliert Störungen während des Betriebs des JBoss-Applikationsservers?",
+        "options": [
+            {
+                "key": "A",
+                "text": "boot.log"
+            },
+            {
+                "key": "B",
+                "text": "server.log"
+            },
+            {
+                "key": "C",
+                "text": "autista.bat"
+            },
+            {
+                "key": "D",
+                "text": "jboss-cli.xml"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Störungen während des Betriebs des JBoss-Applikationsservers werden in server.log protokolliert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 10
+    },
+    {
+        "id": 11,
+        "category": "Support",
+        "competency": "Fehlersuche",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Supportdaten \/ S. 38",
+        "type": "single",
+        "question": "Welche Datei hält den Startvorgang des JBoss-Applikationsservers fest?",
+        "options": [
+            {
+                "key": "A",
+                "text": "vfst-jboss-config.properties"
+            },
+            {
+                "key": "B",
+                "text": "autista.ear"
+            },
+            {
+                "key": "C",
+                "text": "boot.log"
+            },
+            {
+                "key": "D",
+                "text": "truststore.p12"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Der Startvorgang wird in boot.log festgehalten.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 11
+    },
+    {
+        "id": 12,
+        "category": "Linux",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux \/ Dateiberechtigungen \/ S. 6",
+        "type": "single",
+        "question": "Welcher Linux-Benutzer wird in den Dateiberechtigungen als Eigentümer gesetzt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "root"
+            },
+            {
+                "key": "B",
+                "text": "apache"
+            },
+            {
+                "key": "C",
+                "text": "oracle"
+            },
+            {
+                "key": "D",
+                "text": "jboss"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "Die Dokumentation setzt chown -R jboss:jboss \/opt\/vfst.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 12
+    },
+    {
+        "id": 13,
+        "category": "Windows",
+        "competency": "Systemadministration",
+        "difficulty": 1,
+        "document_ref": "AutiSta Server Installation Windows \/ Kopieren der notwendigen Dateien \/ S. 9",
+        "type": "single",
+        "question": "Welches Standard-Zielverzeichnis wird in der Windows-Installationsanleitung angenommen?",
+        "options": [
+            {
+                "key": "A",
+                "text": "c:\\vfst"
+            },
+            {
+                "key": "B",
+                "text": "c:\\AutiSta"
+            },
+            {
+                "key": "C",
+                "text": "D:\\vfst"
+            },
+            {
+                "key": "D",
+                "text": "c:\\Programme\\vfst"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Die Windows-Anleitung geht von c:\\vfst als Zielverzeichnis aus.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 13
+    },
+    {
+        "id": 14,
+        "category": "Linux",
+        "competency": "Systemadministration",
+        "difficulty": 1,
+        "document_ref": "AutiSta Server Installation Linux \/ Kopieren der notwendigen Dateien \/ S. 1",
+        "type": "single",
+        "question": "Welches Standard-Zielverzeichnis wird in der Linux-Installationsanleitung angenommen?",
+        "options": [
+            {
+                "key": "A",
+                "text": "\/var\/vfst"
+            },
+            {
+                "key": "B",
+                "text": "\/opt\/vfst"
+            },
+            {
+                "key": "C",
+                "text": "\/usr\/local\/autista"
+            },
+            {
+                "key": "D",
+                "text": "\/srv\/autista"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Die Linux-Anleitung geht von \/opt\/vfst als Zielverzeichnis aus.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 14
+    },
+    {
+        "id": 15,
+        "category": "JBoss",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Anwendungsdatei autista.ear \/ S. 1",
+        "type": "single",
+        "question": "In welches JBoss-Verzeichnis wird autista.ear kopiert?",
+        "options": [
+            {
+                "key": "A",
+                "text": "configuration"
+            },
+            {
+                "key": "B",
+                "text": "bin"
+            },
+            {
+                "key": "C",
+                "text": "standalone\/deployments"
+            },
+            {
+                "key": "D",
+                "text": "modules\/system"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Die Datei autista.ear wird in das deployments-Verzeichnis von JBoss kopiert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 15
+    },
+    {
+        "id": 16,
+        "category": "JBoss",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ JBoss Module \/ S. 1",
+        "type": "single",
+        "question": "In welches JBoss-Verzeichnis wird das PDFTron-Modul kopiert?",
+        "options": [
+            {
+                "key": "A",
+                "text": "standalone\/deployments"
+            },
+            {
+                "key": "B",
+                "text": "standalone\/configuration"
+            },
+            {
+                "key": "C",
+                "text": "bin"
+            },
+            {
+                "key": "D",
+                "text": "modules"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "Das PDFTron-Modul wird in den Modulordner jboss\/modules kopiert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 16
+    },
+    {
+        "id": 17,
+        "category": "TLS",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ System Properties \/ S. 20",
+        "type": "single",
+        "question": "Welche Property konfiguriert die TLS-Version für die allgemeine Serverkommunikation?",
+        "options": [
+            {
+                "key": "A",
+                "text": "tls.protocol"
+            },
+            {
+                "key": "B",
+                "text": "xta2.webservice.port"
+            },
+            {
+                "key": "C",
+                "text": "root.logger.log.level"
+            },
+            {
+                "key": "D",
+                "text": "db.autista.user"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "tls.protocol bestimmt die zu verwendende TLS-Version; XTA2 und Loadbalancer haben gesonderte Properties.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 17
+    },
+    {
+        "id": 18,
+        "category": "TLS",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ System Properties \/ S. 20",
+        "type": "single",
+        "question": "Welche TLS-Version ist in der Configurator-Dokumentation als Standardproperty angegeben?",
+        "options": [
+            {
+                "key": "A",
+                "text": "TLSv1.2"
+            },
+            {
+                "key": "B",
+                "text": "TLSv1.3"
+            },
+            {
+                "key": "C",
+                "text": "SSLv3"
+            },
+            {
+                "key": "D",
+                "text": "TLSv1.0"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Die Property tls.protocol ist mit TLSv1.3 angegeben.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 18
+    },
+    {
+        "id": 19,
+        "category": "Datenbanken",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ Datenbank Einstellungen \/ S. 21",
+        "type": "single",
+        "question": "Welche Property deaktiviert die Transportverschlüsselung der AutiSta-Datenbankverbindung?",
+        "options": [
+            {
+                "key": "A",
+                "text": "db.autista.password=false"
+            },
+            {
+                "key": "B",
+                "text": "db.autista.connection.url=false"
+            },
+            {
+                "key": "C",
+                "text": "db.autista.connection.encrypted=false"
+            },
+            {
+                "key": "D",
+                "text": "truststore.password=false"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Die Transportverschlüsselung wird über db.autista.connection.encrypted=false deaktiviert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 19
+    },
+    {
+        "id": 20,
+        "category": "Datenbanken",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ MSSQL \/ S. 21",
+        "type": "single",
+        "question": "Welche MSSQL-Property deaktiviert die Zertifikatsprüfung des Datenbankserverzertifikats?",
+        "options": [
+            {
+                "key": "A",
+                "text": "db.autista.connection.encrypted=true"
+            },
+            {
+                "key": "B",
+                "text": "db.autista.user=ant"
+            },
+            {
+                "key": "C",
+                "text": "tls.protocol=TLSv1.3"
+            },
+            {
+                "key": "D",
+                "text": "db.autista.connection.trust.certificate=true"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "db.autista.connection.trust.certificate=true deaktiviert die Prüfung des MSSQL-Zertifikats.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 20
+    },
+    {
+        "id": 21,
+        "category": "Konfiguration",
+        "competency": "Dokumentationsverständnis",
+        "difficulty": 2,
+        "document_ref": "VfSt-JBoss-Configurator \/ Konfigurationsdatei \/ S. 19",
+        "type": "single",
+        "question": "Wo werden die zentralen Properties des VfSt-JBoss-Configurators gepflegt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "vfst-jboss-config.properties"
+            },
+            {
+                "key": "B",
+                "text": "server.log"
+            },
+            {
+                "key": "C",
+                "text": "autista.truststore.p12"
+            },
+            {
+                "key": "D",
+                "text": "AutiSta Admin"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Die Konfigurationsparameter werden in der Datei vfst-jboss-config.properties gepflegt.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 21
+    },
+    {
+        "id": 22,
+        "category": "Konfiguration",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ Konfigurationsdatei jboss-cli.xml \/ S. 25",
+        "type": "single",
+        "question": "Welche Datei muss bei gesetztem Portoffset für den Default-Controller angepasst werden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "standalone.conf"
+            },
+            {
+                "key": "B",
+                "text": "jboss-cli.xml"
+            },
+            {
+                "key": "C",
+                "text": "autista.bat"
+            },
+            {
+                "key": "D",
+                "text": "serverconfig.sql"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Bei Portoffset muss in jboss-cli.xml der Port des Default-Controllers angepasst werden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 22
+    },
+    {
+        "id": 23,
+        "category": "Administration",
+        "competency": "Kommunikationsverständnis",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Betreiberkennung \/ S. 31",
+        "type": "single",
+        "question": "Welcher AutiSta-Admin-Bereich enthält die Betreiberkennung?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Support"
+            },
+            {
+                "key": "B",
+                "text": "Kommunikation"
+            },
+            {
+                "key": "C",
+                "text": "Einstellungen"
+            },
+            {
+                "key": "D",
+                "text": "System"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Die Betreiberkennung wird unter Einstellungen gepflegt.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 23
+    },
+    {
+        "id": 24,
+        "category": "Administration",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Technischer Benutzer \/ S. 32",
+        "type": "single",
+        "question": "Wozu dient der Technische Benutzer?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Zur lokalen Druckerinstallation"
+            },
+            {
+                "key": "B",
+                "text": "Zur Lizenzdateierstellung"
+            },
+            {
+                "key": "C",
+                "text": "Zur JBoss-Konfiguration"
+            },
+            {
+                "key": "D",
+                "text": "Zum Abgleich mandantenübergreifender Informationen mit dem Registerverfahren"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "Der Technische Benutzer dient dem Abgleich mandantenübergreifender Informationen mit dem Registerverfahren.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 24
+    },
+    {
+        "id": 25,
+        "category": "Monitoring",
+        "competency": "Support",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Betriebsdaten senden \/ S. 32",
+        "type": "single",
+        "question": "Welcher Prozess kann alle 28 Tage automatisch technische Informationen an den VfSt Support übermitteln?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Betriebsdaten senden"
+            },
+            {
+                "key": "B",
+                "text": "Ortsbuch Update"
+            },
+            {
+                "key": "C",
+                "text": "Vorgangssperren lösen"
+            },
+            {
+                "key": "D",
+                "text": "AutiSta Werkzeuge"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Betriebsdaten senden kann alle 28 Tage automatisch technische Informationen übermitteln.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 25
+    },
+    {
+        "id": 26,
+        "category": "Kommunikation",
+        "competency": "Architekturverständnis",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Kommunikation \/ S. 34",
+        "type": "single",
+        "question": "Welche Voraussetzung nennt das Admin-Handbuch für die Konfiguration im Bereich Kommunikation?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Serveradministrator mit administrativen Kommunikationsrechten"
+            },
+            {
+                "key": "B",
+                "text": "Aktivierter Drucker"
+            },
+            {
+                "key": "C",
+                "text": "Gelöschter Mandant"
+            },
+            {
+                "key": "D",
+                "text": "Deaktivierter Proxy"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Für den Bereich Kommunikation sind administrative Kommunikationsrechte erforderlich.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 26
+    },
+    {
+        "id": 27,
+        "category": "Architektur",
+        "competency": "Architekturverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Einleitung \/ S. 28",
+        "type": "single",
+        "question": "Welche Aussage beschreibt die Grundarchitektur von AutiSta laut Admin-Handbuch korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Nur Clientkomponente ohne Server"
+            },
+            {
+                "key": "B",
+                "text": "Serverseitige Komponente und clientseitige Komponente kommunizieren ausschließlich über Webservices"
+            },
+            {
+                "key": "C",
+                "text": "Direkte Datenbankverbindung jedes Clients ohne Server"
+            },
+            {
+                "key": "D",
+                "text": "Reine Desktopanwendung ohne Drittkomponenten"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "AutiSta besteht aus Server- und Clientkomponente; die Kommunikation erfolgt ausschließlich über Webservices.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 27
+    },
+    {
+        "id": 28,
+        "category": "Support",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Webservice Aufzeichnungen \/ S. 38",
+        "type": "single",
+        "question": "Wann soll die Webservice-Aufzeichnung laut Admin-Handbuch wieder deaktiviert werden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Nie, sie ist dauerhaft vorgesehen"
+            },
+            {
+                "key": "B",
+                "text": "Erst nach dem nächsten Update"
+            },
+            {
+                "key": "C",
+                "text": "Umgehend nach Reproduktion und Laden der Supportdatei"
+            },
+            {
+                "key": "D",
+                "text": "Nur nach Neustart des Servers"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Die Aufzeichnung sollte umgehend deaktiviert werden, weil große Datenmengen und schützenswerte Daten entstehen können.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 28
+    },
+    {
+        "id": 29,
+        "category": "Client",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "Startparameter für AutiSta \/ Downloadverzeichnis \/ S. 44",
+        "type": "single",
+        "question": "Welcher Parameter gibt das Downloadverzeichnis des AutiSta Clients vor?",
+        "options": [
+            {
+                "key": "A",
+                "text": "CACHE_DIR"
+            },
+            {
+                "key": "B",
+                "text": "START_DELAY"
+            },
+            {
+                "key": "C",
+                "text": "BENUTZERNAME"
+            },
+            {
+                "key": "D",
+                "text": "DOWNLOAD_DIR"
+            }
+        ],
+        "correct_answers": [
+            "D"
+        ],
+        "explanation": "DOWNLOAD_DIR bestimmt das Verzeichnis für heruntergeladene Dateien.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 29
+    },
+    {
+        "id": 30,
+        "category": "Client",
+        "competency": "Technisches Verständnis",
+        "difficulty": 2,
+        "document_ref": "Startparameter für AutiSta \/ Caching \/ S. 44",
+        "type": "single",
+        "question": "Welcher Parameter ist für das Caching zwingend erforderlich?",
+        "options": [
+            {
+                "key": "A",
+                "text": "CACHE_DIR"
+            },
+            {
+                "key": "B",
+                "text": "TS_SCAN_ENVIRONMENT"
+            },
+            {
+                "key": "C",
+                "text": "SCAN_TIMEOUT"
+            },
+            {
+                "key": "D",
+                "text": "LOGIN_STANDESAMTSNUMMERN"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "CACHE_DIR legt den Verzeichnisnamen für das Caching fest und ist zwingend erforderlich.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 30
+    },
+    {
+        "id": 31,
+        "category": "Client",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "Startparameter für AutiSta \/ Aufrufeinstellungen \/ S. 44",
+        "type": "single",
+        "question": "Welcher Standardwert gilt für START_DELAY laut Startparameter-Dokument?",
+        "options": [
+            {
+                "key": "A",
+                "text": "10 Sekunden"
+            },
+            {
+                "key": "B",
+                "text": "15 Sekunden"
+            },
+            {
+                "key": "C",
+                "text": "30 Sekunden"
+            },
+            {
+                "key": "D",
+                "text": "300 Sekunden"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Der Standardwert für START_DELAY beträgt 15 Sekunden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 31
+    },
+    {
+        "id": 32,
+        "category": "Update",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "AutiSta 13.1 T-IzA \/ Neuinstallation JBoss 8.1.4 \/ S. 50",
+        "type": "single",
+        "question": "Welche Komponente muss für AutiSta 13.1 neu installiert werden, weil kein Patchmechanismus verfügbar ist?",
+        "options": [
+            {
+                "key": "A",
+                "text": "JBoss EAP 8.1.4"
+            },
+            {
+                "key": "B",
+                "text": "AutiSta Admin Benutzer"
+            },
+            {
+                "key": "C",
+                "text": "Ortsbuch"
+            },
+            {
+                "key": "D",
+                "text": "Druckertreiber"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Für JBoss EAP 8.1.4 steht kein Patchmechanismus zur Verfügung; es ist eine Neuinstallation erforderlich.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 32
+    },
+    {
+        "id": 33,
+        "category": "Update",
+        "competency": "Dokumentationsverständnis",
+        "difficulty": 2,
+        "document_ref": "AutiSta 13.1 T-IzA \/ Installationstermin \/ S. 50",
+        "type": "single",
+        "question": "Bis wann muss das produktive Update auf AutiSta 13.1 spätestens installiert werden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "01.03.2026"
+            },
+            {
+                "key": "B",
+                "text": "27.03.2026"
+            },
+            {
+                "key": "C",
+                "text": "01.05.2026"
+            },
+            {
+                "key": "D",
+                "text": "01.11.2026"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Das Update muss spätestens bis 1.5.2026 installiert werden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 33
+    },
+    {
+        "id": 34,
+        "category": "Client",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "Installationsanleitung AutiSta Client \/ SSL-Vertrauensstellung \/ S. 42",
+        "type": "single",
+        "question": "Wo muss das Ausstellerzertifikat des AutiSta Servers für die Clientkommunikation importiert werden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "In den Windows-Zertifikatsspeicher des Citrix- bzw. Terminalservers"
+            },
+            {
+                "key": "B",
+                "text": "In die AutiSta-Datenbank"
+            },
+            {
+                "key": "C",
+                "text": "In server.log"
+            },
+            {
+                "key": "D",
+                "text": "In das Downloadverzeichnis"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Für die SSL-Vertrauensstellung wird das CA-Zertifikat als vertrauenswürdiges Stammzertifikat im Windows-Zertifikatsspeicher des Citrix-\/Terminalservers importiert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 34
+    },
+    {
+        "id": 35,
+        "category": "Fehlersuche",
+        "competency": "Fehlersuche",
+        "difficulty": 4,
+        "document_ref": "AutiSta Server Installation und Admin-Handbuch \/ Keystore\/Truststore; Register \/ S. 2",
+        "type": "single",
+        "question": "Ein Betreiber meldet nach Zertifikatswechsel Registerprobleme. Welcher erste Prüfbereich ist dokumentationsnah am sinnvollsten?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Keystore\/Truststore und Kommunikations-\/Registerkonfiguration"
+            },
+            {
+                "key": "B",
+                "text": "Ortsbuch Update"
+            },
+            {
+                "key": "C",
+                "text": "Lizenzverwaltung"
+            },
+            {
+                "key": "D",
+                "text": "Dynamische Druckernamen"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Bei SSL-\/Registerproblemen sind Zertifikatsablage und Registerkommunikation naheliegende erste Prüfbereiche.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 35
+    },
+    {
+        "id": 36,
+        "category": "Fehlersuche",
+        "competency": "Fehlersuche",
+        "difficulty": 4,
+        "document_ref": "VfSt-JBoss-Configurator \/ Erstellung der standalone.xml \/ S. 24",
+        "type": "single",
+        "question": "Nach Ausführung des Configurators startet AutiSta nicht. Welche Dateien fordert die Dokumentation für den Supportfall besonders an?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Nur Lizenzdatei"
+            },
+            {
+                "key": "B",
+                "text": "Nur Ortsbuchdatei"
+            },
+            {
+                "key": "C",
+                "text": "Logdateien des Configurators und JBoss-Servers sowie vfst-jboss-config.properties ohne Kennwörter"
+            },
+            {
+                "key": "D",
+                "text": "Nur Screenshot der Loginseite"
+            }
+        ],
+        "correct_answers": [
+            "C"
+        ],
+        "explanation": "Die Configurator-Doku nennt Configurator-Log, JBoss-Logs und vfst-jboss-config.properties; Kennwörter sind vorher zu entfernen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 36
+    },
+    {
+        "id": 37,
+        "category": "Loadbalancer",
+        "competency": "Architekturverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Loadbalancer \/ S. 6",
+        "type": "single",
+        "question": "Welche Eigenschaft ist beim Loadbalancer-Einsatz laut Installationsanleitung wichtig?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Round-Robin ohne Sitzungsbindung"
+            },
+            {
+                "key": "B",
+                "text": "Sticky Session Loadbalancing"
+            },
+            {
+                "key": "C",
+                "text": "Zufällige Serverzuordnung bei jedem Request"
+            },
+            {
+                "key": "D",
+                "text": "Deaktivierte Datenbankverbindung"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Alle Aufrufe müssen fest dem initialen AutiSta Server zugeordnet werden: Sticky Sessions.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 37
+    },
+    {
+        "id": 38,
+        "category": "Kommunikation",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Transport \/ S. 35",
+        "type": "single",
+        "question": "Was steuert der eigene Serverprozess XPersonenstand Versand \/ Abholung?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Abholung und Versand von Mitteilungen"
+            },
+            {
+                "key": "B",
+                "text": "Erstellung der Lizenzdateien"
+            },
+            {
+                "key": "C",
+                "text": "Druckernamenerkennung"
+            },
+            {
+                "key": "D",
+                "text": "Oracle-Zeichensatzprüfung"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Abholung und Versand von Mitteilungen werden durch einen eigenen Serverprozess gesteuert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 38
+    },
+    {
+        "id": 39,
+        "category": "Gesamtverständnis",
+        "competency": "Architekturverständnis",
+        "difficulty": 4,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Einleitung \/ S. 28",
+        "type": "single",
+        "question": "Welche Aussage beschreibt die Trennung der Administration laut Admin-Handbuch am besten?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Alle Einstellungen werden ausschließlich im Client gepflegt"
+            },
+            {
+                "key": "B",
+                "text": "Mandantenspezifisches im Client, technische Serverkonfiguration über Dateien, systemweite Einstellungen über AutiSta Admin"
+            },
+            {
+                "key": "C",
+                "text": "Alles wird ausschließlich in der Datenbank per SQL gepflegt"
+            },
+            {
+                "key": "D",
+                "text": "Alles wird ausschließlich über den JBoss-Configurator gepflegt"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Die Dokumentation trennt mandantenspezifische Client-Einstellungen, technische Konfigurationsdateien und systemweite AutiSta-Admin-Einstellungen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 39
+    },
+    {
+        "id": 40,
+        "category": "Support",
+        "competency": "Kommunikationsverständnis",
+        "difficulty": 1,
+        "document_ref": "Mehrere Dokumente \/ Kontaktinformation \/ S. 8",
+        "type": "single",
+        "question": "Welcher Weg wird für technische Supportanfragen in den Dokumentationen angegeben?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Ausschließlich Ticketsystem"
+            },
+            {
+                "key": "B",
+                "text": "Direkte E-Mail an Sachbearbeiter"
+            },
+            {
+                "key": "C",
+                "text": "Telefon ohne Ticket"
+            },
+            {
+                "key": "D",
+                "text": "Chat im Admin-Handbuch"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Die Dokumentationen verweisen für Supportanfragen auf das Ticketsystem im Partnerbereich.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 40
+    },
+    {
+        "id": 41,
+        "category": "Installation",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Einleitung \/ S. 1",
+        "type": "multiple",
+        "question": "Welche Informationen werden vor Beginn einer AutiSta-Server-Installation benötigt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Host, Port, Benutzer, Kennwort und Datenbankname"
+            },
+            {
+                "key": "B",
+                "text": "SSL-Zertifikate für den AutiSta Server"
+            },
+            {
+                "key": "C",
+                "text": "SSL-Zertifikate der Drittkomponenten"
+            },
+            {
+                "key": "D",
+                "text": "Persönliches Windows-Passwort des Bewerbers"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Die Installationsanleitungen nennen Datenbankverbindungsdaten sowie Server- und Drittkomponenten-Zertifikate.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 41
+    },
+    {
+        "id": 42,
+        "category": "Linux",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Server Installation Linux \/ Einleitung \/ S. 1",
+        "type": "multiple",
+        "question": "Welche RPM-Pakete werden in der Linux-Installationsanleitung als Voraussetzung genannt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "fontconfig"
+            },
+            {
+                "key": "B",
+                "text": "freetype"
+            },
+            {
+                "key": "C",
+                "text": "libpng"
+            },
+            {
+                "key": "D",
+                "text": "Microsoft ODBC Tools"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Unter Linux müssen fontconfig, freetype und libpng installiert sein.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 42
+    },
+    {
+        "id": 43,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Neugenerierung des Keystores \/ S. 2",
+        "type": "multiple",
+        "question": "Welche Aussagen zur Erstellung eines neuen Keystores sind dokumentationskonform?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Auf neuem Host muss ein neuer Keystore erzeugt werden"
+            },
+            {
+                "key": "B",
+                "text": "Es ist ein von einer CA ausgestelltes Zertifikat zu verwenden"
+            },
+            {
+                "key": "C",
+                "text": "Der FQDN ist als Vor- und Nachname anzugeben"
+            },
+            {
+                "key": "D",
+                "text": "Der Truststore ersetzt den Keystore vollständig"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Bei neuem Host wird ein Keystore mit CA-signiertem Zertifikat erzeugt; der FQDN wird im Dialog verwendet.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 43
+    },
+    {
+        "id": 44,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Import CA und Serverzertifikat \/ S. 3",
+        "type": "multiple",
+        "question": "Welche Zertifikate werden in den Keystore importiert?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Rootzertifikat der CA"
+            },
+            {
+                "key": "B",
+                "text": "Signiertes Serverzertifikat"
+            },
+            {
+                "key": "C",
+                "text": "Drittanbieterzertifikate für alle externen Systeme"
+            },
+            {
+                "key": "D",
+                "text": "server.log"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B"
+        ],
+        "explanation": "In den Keystore werden CA-Rootzertifikat und signiertes Serverzertifikat importiert; Drittanbieterzertifikate gehören in den Truststore.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 44
+    },
+    {
+        "id": 45,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Neugenerierung Truststore; Drittanbieterzertifikate \/ S. 3",
+        "type": "multiple",
+        "question": "Welche Zertifikate gehören laut Dokumentation in den Truststore?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Rootzertifikat der CA"
+            },
+            {
+                "key": "B",
+                "text": "Signiertes Serverzertifikat"
+            },
+            {
+                "key": "C",
+                "text": "Zertifikate von Drittsystemen"
+            },
+            {
+                "key": "D",
+                "text": "SSL-Zertifikat der Verlagswebseite"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Der Truststore enthält CA, Serverzertifikat, Drittanbieterzertifikate und das Zertifikat www.vfst.de.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 45
+    },
+    {
+        "id": 46,
+        "category": "Sicherheit",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "Mehrere Dokumente \/ Sicherheit \/ S. 20",
+        "type": "multiple",
+        "question": "Welche Maßnahmen sind sicherheitsrelevant?",
+        "options": [
+            {
+                "key": "A",
+                "text": "TLS-Konfiguration"
+            },
+            {
+                "key": "B",
+                "text": "Credential Store für Datenbankkennwörter"
+            },
+            {
+                "key": "C",
+                "text": "Dateiberechtigungen unter Linux"
+            },
+            {
+                "key": "D",
+                "text": "Dauerhafte Webservice-Aufzeichnung ohne Anlass"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "TLS, Credential Store und Dateirechte sind sicherheitsrelevant; dauerhafte Webservice-Aufzeichnung wird gerade nicht empfohlen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 46
+    },
+    {
+        "id": 47,
+        "category": "JBoss",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ Einleitung; Erstellung \/ S. 19",
+        "type": "multiple",
+        "question": "Welche Aufgaben übernimmt der VfSt-JBoss-Configurator laut Dokumentation?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Erzeugt standalone.xml neu"
+            },
+            {
+                "key": "B",
+                "text": "Nutzt eine gut lesbare Parameterdatei"
+            },
+            {
+                "key": "C",
+                "text": "Sichert vorhandene standalone.xml vorher"
+            },
+            {
+                "key": "D",
+                "text": "Erstellt automatisch Oracle-Datenbanken"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Der Configurator erzeugt die JBoss-Konfiguration aus Properties und sichert die alte standalone.xml.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 47
+    },
+    {
+        "id": 48,
+        "category": "Logging",
+        "competency": "Fehlersuche",
+        "difficulty": 2,
+        "document_ref": "VfSt-JBoss-Configurator \/ Logging Einstellungen \/ S. 21",
+        "type": "multiple",
+        "question": "Welche Aussagen zur Logrotation sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Es gibt periodic rotating file handler"
+            },
+            {
+                "key": "B",
+                "text": "Es gibt size rotating file handler"
+            },
+            {
+                "key": "C",
+                "text": "Nur eine der *.file.handler.active Properties soll true sein"
+            },
+            {
+                "key": "D",
+                "text": "Logging wird in AutiSta nie konfiguriert"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Die Configurator-Doku beschreibt beide Varianten und fordert, nur eine aktive Variante zu wählen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 48
+    },
+    {
+        "id": 49,
+        "category": "Datenbanken",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ AutiSta DB \/ S. 21",
+        "type": "multiple",
+        "question": "Welche Angaben gehören zur AutiSta-DB-Konfiguration im Configurator?",
+        "options": [
+            {
+                "key": "A",
+                "text": "db.autista.connection.url"
+            },
+            {
+                "key": "B",
+                "text": "db.autista.user"
+            },
+            {
+                "key": "C",
+                "text": "db.autista.password, wenn kein Credential Store genutzt wird"
+            },
+            {
+                "key": "D",
+                "text": "LOGIN_STANDESAMTSNUMMERN"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Die Datenbankproperties umfassen Connection-URL, Benutzer und ggf. Passwort; LOGIN_STANDESAMTSNUMMERN gehört zum Clientstart.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 49
+    },
+    {
+        "id": 50,
+        "category": "Datenbanken",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "Installation und Update der Datenbanken \/ MSSQL-Server \/ S. 18",
+        "type": "multiple",
+        "question": "Welche Aussagen zu MSSQL sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Empfohlener Treiber ist Microsoft JDBC Driver 12.4.1"
+            },
+            {
+                "key": "B",
+                "text": "Skripte liegen unter db\/mssql"
+            },
+            {
+                "key": "C",
+                "text": "Beim Einspielen ist auf Encoding und Umlaute zu achten"
+            },
+            {
+                "key": "D",
+                "text": "MSSQL erfordert AL32UTF8"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "AL32UTF8 betrifft Oracle, nicht MSSQL.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 50
+    },
+    {
+        "id": 51,
+        "category": "Datenbanken",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "Installation und Update der Datenbanken \/ Oracle \/ S. 17",
+        "type": "multiple",
+        "question": "Welche Aussagen zu Oracle sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Datenbankinstanz muss AL32UTF8 verwenden"
+            },
+            {
+                "key": "B",
+                "text": "Der Zeichensatz kann über NLS_DATABASE_PARAMETERS abgefragt werden"
+            },
+            {
+                "key": "C",
+                "text": "Skripte liegen unter db\/oracle"
+            },
+            {
+                "key": "D",
+                "text": "Neuinstallation erfolgt mit create_autista_db_ms.sql"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "create_autista_db_ms.sql gehört zu MSSQL.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 51
+    },
+    {
+        "id": 52,
+        "category": "Administration",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Inhalt \/ S. 27",
+        "type": "multiple",
+        "question": "Welche Bereiche nennt das Inhaltsverzeichnis des AutiSta Admin Handbuchs?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Konfiguration"
+            },
+            {
+                "key": "B",
+                "text": "Einstellungen"
+            },
+            {
+                "key": "C",
+                "text": "Kommunikation"
+            },
+            {
+                "key": "D",
+                "text": "System"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Alle vier Bereiche sind Hauptbereiche im Admin-Handbuch.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 52
+    },
+    {
+        "id": 53,
+        "category": "Administration",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Konfiguration \/ S. 30",
+        "type": "multiple",
+        "question": "Welche Funktionen gehören zur Konfiguration im AutiSta Admin?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Mandanten"
+            },
+            {
+                "key": "B",
+                "text": "Proxys"
+            },
+            {
+                "key": "C",
+                "text": "Proxy-Ausnahmeliste"
+            },
+            {
+                "key": "D",
+                "text": "Dynamische Druckernamen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Alle genannten Punkte sind Unterpunkte der Konfiguration.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 53
+    },
+    {
+        "id": 54,
+        "category": "Monitoring",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Systemüberwachung \/ S. 36",
+        "type": "multiple",
+        "question": "Welche Aussagen zur Systemüberwachung sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Grün bedeutet keine Störung"
+            },
+            {
+                "key": "B",
+                "text": "Gelb bedeutet, der Bereich sollte geprüft werden"
+            },
+            {
+                "key": "C",
+                "text": "Rot bedeutet akut zu bearbeitendes Problem"
+            },
+            {
+                "key": "D",
+                "text": "Rot gekennzeichnete XPersonenstand-Mitteilungen sind mehr als sieben Tage unbearbeitet"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Alle Aussagen entsprechen dem Abschnitt Systemüberwachung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 54
+    },
+    {
+        "id": 55,
+        "category": "Support",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Systeminformation \/ S. 36",
+        "type": "multiple",
+        "question": "Welche Informationen können im Bereich Systeminformation sichtbar werden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Eingesetzte Datenbanken"
+            },
+            {
+                "key": "B",
+                "text": "Bereitgestellte Speichervolumen"
+            },
+            {
+                "key": "C",
+                "text": "Eingespielte Zertifikate"
+            },
+            {
+                "key": "D",
+                "text": "Private Bewerbernotizen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Systeminformation listet Komponenten, Datenbanken, Speicher und Zertifikate auf.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 55
+    },
+    {
+        "id": 56,
+        "category": "Support",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 4,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Webservice Aufzeichnungen \/ S. 38",
+        "type": "multiple",
+        "question": "Warum ist Webservice-Aufzeichnung vorsichtig zu verwenden?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Sie kann große Datenmengen generieren"
+            },
+            {
+                "key": "B",
+                "text": "Sie kann besonders schützenswerte fachliche Daten enthalten"
+            },
+            {
+                "key": "C",
+                "text": "Sie kann personenbezogene Daten enthalten"
+            },
+            {
+                "key": "D",
+                "text": "Sie ersetzt dauerhaft das Monitoring"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Die Dokumentation warnt vor Datenmenge und sensiblen fachlichen\/personenbezogenen Daten.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 56
+    },
+    {
+        "id": 57,
+        "category": "Client",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Installationsanleitung AutiSta Client \/ Systemvoraussetzungen \/ S. 40",
+        "type": "multiple",
+        "question": "Welche Voraussetzungen nennt die Client-Installation?",
+        "options": [
+            {
+                "key": "A",
+                "text": "AutiSta Client benötigt pro Session ca. 1 GB RAM auf Terminalservern"
+            },
+            {
+                "key": "B",
+                "text": "AutiSta Server muss vom Terminalserver erreichbar sein"
+            },
+            {
+                "key": "C",
+                "text": "Drucker müssen Duplex unterstützen"
+            },
+            {
+                "key": "D",
+                "text": "Client benötigt zwingend lokalen Oracle-Server"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Oracle lokal ist keine Clientvoraussetzung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 57
+    },
+    {
+        "id": 58,
+        "category": "Client",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Installationsanleitung AutiSta Client \/ Startskript AutiSta Client \/ S. 40",
+        "type": "multiple",
+        "question": "Welche Werte sind im Startskript autista.bat anzupassen bzw. relevant?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Server-Name passend zum CN\/SAN des Serverzertifikats"
+            },
+            {
+                "key": "B",
+                "text": "CLIENTNAME"
+            },
+            {
+                "key": "C",
+                "text": "USERNAME"
+            },
+            {
+                "key": "D",
+                "text": "JBoss-Root-Passwort"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Servername muss zum Zertifikat passen; CLIENTNAME und USERNAME werden ausgewertet.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 58
+    },
+    {
+        "id": 59,
+        "category": "Client",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "Installationsanleitung AutiSta Client \/ Downloadverzeichnis \/ S. 41",
+        "type": "multiple",
+        "question": "Welche Reihenfolge prüft AutiSta für das Downloadverzeichnis, wenn DOWNLOAD_DIR nicht verwendbar ist?",
+        "options": [
+            {
+                "key": "A",
+                "text": "DOWNLOAD_DIR"
+            },
+            {
+                "key": "B",
+                "text": "%USERPROFILE%\\Downloads"
+            },
+            {
+                "key": "C",
+                "text": "%USERPROFILE%"
+            },
+            {
+                "key": "D",
+                "text": "Leerer Pfad als letzte Möglichkeit"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Die Dokumentation beschreibt genau diese Fallback-Reihenfolge.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 59
+    },
+    {
+        "id": 60,
+        "category": "Client",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "Startparameter für AutiSta \/ Aufrufeinstellungen \/ S. 44",
+        "type": "multiple",
+        "question": "Welche Startparameter betreffen Arbeitsplatz und Benutzer?",
+        "options": [
+            {
+                "key": "A",
+                "text": "ARBEITSPLATZNAME"
+            },
+            {
+                "key": "B",
+                "text": "BENUTZERNAME"
+            },
+            {
+                "key": "C",
+                "text": "DOWNLOAD_DIR"
+            },
+            {
+                "key": "D",
+                "text": "CACHE_DIR"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B"
+        ],
+        "explanation": "ARBEITSPLATZNAME und BENUTZERNAME dienen der Zuordnung von Arbeitsplatz- bzw. Benutzereinstellungen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 60
+    },
+    {
+        "id": 61,
+        "category": "Update",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Updateanleitung AutiSta 13.1 \/ Vorbereitung \/ S. 47",
+        "type": "multiple",
+        "question": "Welche Schritte gehören zur Vorbereitung des Updates?",
+        "options": [
+            {
+                "key": "A",
+                "text": "AutiSta-Server-Dienst stoppen"
+            },
+            {
+                "key": "B",
+                "text": "Aktuelle Installation sichern"
+            },
+            {
+                "key": "C",
+                "text": "AutiSta1310.zip entpacken"
+            },
+            {
+                "key": "D",
+                "text": "Webservice-Aufzeichnung dauerhaft aktivieren"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Die Updateanleitung nennt Stoppen, Sicherung und Entpacken; dauerhafte Aufzeichnung gehört nicht dazu.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 61
+    },
+    {
+        "id": 62,
+        "category": "Update",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Updateanleitung AutiSta 13.1 \/ Updategliederung \/ S. 47",
+        "type": "multiple",
+        "question": "Welche Komponenten werden beim Update laut Anleitung behandelt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "AutiSta Client"
+            },
+            {
+                "key": "B",
+                "text": "AutiSta Server"
+            },
+            {
+                "key": "C",
+                "text": "VfSt-JBoss-Configurator"
+            },
+            {
+                "key": "D",
+                "text": "Datenbank"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Die Updateanleitung enthält alle vier Bereiche.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 62
+    },
+    {
+        "id": 63,
+        "category": "Update",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 4,
+        "document_ref": "Updateanleitung AutiSta 13.1 \/ Übernahme Key- und Truststore \/ S. 48",
+        "type": "multiple",
+        "question": "Welche Aussagen zu Key- und Truststore beim Update sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Können bei gleichlautendem Servernamen weiterverwendet werden"
+            },
+            {
+                "key": "B",
+                "text": "Sind in das JBoss-configuration-Verzeichnis zu kopieren"
+            },
+            {
+                "key": "C",
+                "text": "Veraltete Zertifikate sollen ggf. entfernt werden"
+            },
+            {
+                "key": "D",
+                "text": "Müssen immer ohne Ausnahme neu erzeugt werden"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Neue Erstellung ist nur erforderlich, wenn Voraussetzungen wie Servername nicht passen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 63
+    },
+    {
+        "id": 64,
+        "category": "T-IzA",
+        "competency": "Dokumentationsverständnis",
+        "difficulty": 2,
+        "document_ref": "AutiSta 13.1 T-IzA \/ Inhalt \/ S. 50",
+        "type": "multiple",
+        "question": "Welche Themen nennt die T-IzA zu AutiSta 13.1?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Installationstermin"
+            },
+            {
+                "key": "B",
+                "text": "Drittkomponenten\/Referenzumgebung"
+            },
+            {
+                "key": "C",
+                "text": "Verzögerter Start des AutiSta Client"
+            },
+            {
+                "key": "D",
+                "text": "Anbindung Reader Service für XTA2"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Alle Punkte sind Abschnitte der Technischen Informationen zur Auslieferung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 64
+    },
+    {
+        "id": 65,
+        "category": "Kommunikation",
+        "competency": "Architekturverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Register \/ S. 34",
+        "type": "multiple",
+        "question": "Welche Aussagen zur Registeranbindung sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Verbindungsdetails werden bei Erstkonfiguration angegeben"
+            },
+            {
+                "key": "B",
+                "text": "Beim VfSt ePR-Server werden Verbindungs-URLs teilweise automatisch generiert"
+            },
+            {
+                "key": "C",
+                "text": "Bei anderem Registerverfahren sind Verbindungseinstellungen manuell einzugeben"
+            },
+            {
+                "key": "D",
+                "text": "Registeranbindung wird ausschließlich über Druckernamen gesteuert"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Druckernamen haben mit Registeranbindung nichts zu tun.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 65
+    },
+    {
+        "id": 66,
+        "category": "Kommunikation",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Transport \/ S. 35",
+        "type": "multiple",
+        "question": "Welche Aussagen zum Transportbereich sind korrekt?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Informationen für den Transportadapter liefert der Hersteller des Transportverfahrens"
+            },
+            {
+                "key": "B",
+                "text": "DVDV-Adressierung erfordert Kennung der Melderegisterauskunft in Stammdaten je Standesamt"
+            },
+            {
+                "key": "C",
+                "text": "Protokollierung kann bei mandantenspezifischen Kommunikationsrechten mandantenweise aktiviert werden"
+            },
+            {
+                "key": "D",
+                "text": "Transport ist nur für Druckaufträge zuständig"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Der Transportbereich betrifft Mitteilungsversand\/-empfang, nicht Druck.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 66
+    },
+    {
+        "id": 67,
+        "category": "Administration",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ System \/ S. 36",
+        "type": "multiple",
+        "question": "Welche Aufgaben können im Systembereich des Admin-Handbuchs liegen?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Hinweise bei Fehlern finden"
+            },
+            {
+                "key": "B",
+                "text": "Lizenzen einspielen"
+            },
+            {
+                "key": "C",
+                "text": "Ortsbuch Update einspielen"
+            },
+            {
+                "key": "D",
+                "text": "Java entpacken"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Java-Entpacken gehört zur Installation, nicht zum Systembereich von AutiSta Admin.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 67
+    },
+    {
+        "id": 68,
+        "category": "Fehlersuche",
+        "competency": "Fehlersuche",
+        "difficulty": 4,
+        "document_ref": "AutiSta Server Installation; Admin-Handbuch \/ Start des Servers; Anmeldung \/ S. 6",
+        "type": "multiple",
+        "question": "Welche Prüfstellen sind sinnvoll, wenn die Administrationsoberfläche nicht erreichbar ist?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Serverdienst gestartet"
+            },
+            {
+                "key": "B",
+                "text": "URL https:\/\/hostname:port\/autista-admin korrekt"
+            },
+            {
+                "key": "C",
+                "text": "Keystore\/Truststore\/TLS-Konfiguration plausibel"
+            },
+            {
+                "key": "D",
+                "text": "Ortsbuchdatei monatlich aktuell"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Erreichbarkeit hängt primär an Dienst, URL\/Port und SSL\/TLS; Ortsbuch ist dafür nicht erste Prüfstelle.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 68
+    },
+    {
+        "id": 69,
+        "category": "Fehlersuche",
+        "competency": "Fehlersuche",
+        "difficulty": 4,
+        "document_ref": "AutiSta 13.1 T-IzA; Startparameter \/ Verzögerter Start \/ S. 50",
+        "type": "multiple",
+        "question": "Welche Prüfstellen sind sinnvoll, wenn Client-Hardware beim Start nicht zuverlässig erkannt wird?",
+        "options": [
+            {
+                "key": "A",
+                "text": "START_DELAY"
+            },
+            {
+                "key": "B",
+                "text": "AutiSta Client Startparameter"
+            },
+            {
+                "key": "C",
+                "text": "T-IzA-Hinweis zum verzögerten Start"
+            },
+            {
+                "key": "D",
+                "text": "Oracle AL32UTF8"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Der verzögerte Start adressiert asynchrone Startprozesse und Hardwareerkennung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 69
+    },
+    {
+        "id": 70,
+        "category": "Support",
+        "competency": "Kommunikationsverständnis",
+        "difficulty": 3,
+        "document_ref": "Mehrere Dokumente \/ Kontaktinformation \/ S. 8",
+        "type": "multiple",
+        "question": "Welche Unterlagen enthalten Kontakt- bzw. Supporthinweise auf das Ticketsystem?",
+        "options": [
+            {
+                "key": "A",
+                "text": "Serverinstallationsanleitungen"
+            },
+            {
+                "key": "B",
+                "text": "Datenbankdokument"
+            },
+            {
+                "key": "C",
+                "text": "VfSt-JBoss-Configurator"
+            },
+            {
+                "key": "D",
+                "text": "AutiSta Admin Handbuch"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Alle genannten Dokumente verweisen in der Kontaktinformation auf das Ticketsystem.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 70
+    },
+    {
+        "id": 71,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Neugenerierung des Keystores \/ S. 2",
+        "type": "ordering",
+        "question": "Bringen Sie die Schritte zur Erstellung und Nutzung eines CA-signierten Serverzertifikats im Keystore in die richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Keystore mit Schlüsselpaar erzeugen"
+            },
+            {
+                "key": "B",
+                "text": "CSR erstellen"
+            },
+            {
+                "key": "C",
+                "text": "CSR durch CA signieren lassen"
+            },
+            {
+                "key": "D",
+                "text": "Rootzertifikat der CA importieren"
+            },
+            {
+                "key": "E",
+                "text": "Signiertes Serverzertifikat importieren"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "explanation": "Die Dokumentation beschreibt genau diese Reihenfolge.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 71
+    },
+    {
+        "id": 72,
+        "category": "Installation",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Kopieren; Configurator \/ S. 1",
+        "type": "ordering",
+        "question": "Bringen Sie grundlegende Installationsschritte des AutiSta Servers in eine plausible Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Installationsdatei entpacken"
+            },
+            {
+                "key": "B",
+                "text": "Java-Laufzeitumgebung ins Programmverzeichnis entpacken"
+            },
+            {
+                "key": "C",
+                "text": "autista.ear ins Deployments-Verzeichnis kopieren"
+            },
+            {
+                "key": "D",
+                "text": "PDFTron-Modul in JBoss modules kopieren"
+            },
+            {
+                "key": "E",
+                "text": "standalone.xml mit Configurator erstellen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "explanation": "Die Reihenfolge folgt den Installationskapiteln.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 72
+    },
+    {
+        "id": 73,
+        "category": "Credential Store",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Credential Store \/ S. 4",
+        "type": "ordering",
+        "question": "Bringen Sie die Credential-Store-Schritte in die richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Credential Store erstellen"
+            },
+            {
+                "key": "B",
+                "text": "Credential-Store-Kennwort maskieren\/verschlüsseln"
+            },
+            {
+                "key": "C",
+                "text": "Name, Pfad und Passwort in Properties übernehmen"
+            },
+            {
+                "key": "D",
+                "text": "Alias mit Datenbankkennwort hinzufügen"
+            },
+            {
+                "key": "E",
+                "text": "Credential-Store-Name und Alias für AutiSta DB eintragen"
+            },
+            {
+                "key": "F",
+                "text": "standalone.xml neu erzeugen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+        ],
+        "explanation": "Die Credential-Store-Kapitel bauen in dieser Reihenfolge aufeinander auf.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 73
+    },
+    {
+        "id": 74,
+        "category": "VfSt-JBoss-Configurator",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ Grundinstallation; Erstellung \/ S. 19",
+        "type": "ordering",
+        "question": "Bringen Sie die Ausführung des Configurators in eine sinnvolle Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "AutiSta Server Dienst beenden"
+            },
+            {
+                "key": "B",
+                "text": "Configurator-Dateien in JBoss bin kopieren"
+            },
+            {
+                "key": "C",
+                "text": "vfst-jboss-config.properties konfigurieren"
+            },
+            {
+                "key": "D",
+                "text": "Configurator-Skript ausführen"
+            },
+            {
+                "key": "E",
+                "text": "Dateirechte und Logs prüfen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "explanation": "Die Configurator-Dokumentation fordert Dienststopp, Kopieren, Konfiguration, Ausführung und anschließende Prüfung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 74
+    },
+    {
+        "id": 75,
+        "category": "Datenbanken",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "Installation und Update der Datenbanken \/ MSSQL Neuinstallation \/ S. 18",
+        "type": "ordering",
+        "question": "Bringen Sie die MSSQL-Neuinstallation laut Datenbankdokument in die richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Als DBA anmelden"
+            },
+            {
+                "key": "B",
+                "text": "create_autista_db_ms.sql einspielen"
+            },
+            {
+                "key": "C",
+                "text": "create_autista_struct_ms.sql einspielen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Das MSSQL-Kapitel nennt Anmeldung als DBA und dann Datenbank- und Struktur-Skript.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 75
+    },
+    {
+        "id": 76,
+        "category": "Update",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Updateanleitung AutiSta 13.1 \/ Updateablauf \/ S. 47",
+        "type": "ordering",
+        "question": "Bringen Sie zentrale Update-Schritte in eine plausible Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Serverdienst stoppen und Installation sichern"
+            },
+            {
+                "key": "B",
+                "text": "Clientdateien aktualisieren"
+            },
+            {
+                "key": "C",
+                "text": "Server-Programmdatei und Java aktualisieren"
+            },
+            {
+                "key": "D",
+                "text": "Key-\/Truststore übernehmen bzw. prüfen"
+            },
+            {
+                "key": "E",
+                "text": "Configurator kopieren und standalone.xml neu erzeugen"
+            },
+            {
+                "key": "F",
+                "text": "Datenbank aktualisieren"
+            },
+            {
+                "key": "G",
+                "text": "Lizenzen und Ortsbuch aktualisieren"
+            },
+            {
+                "key": "H",
+                "text": "Updateinformationen übermitteln"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+        ],
+        "explanation": "Die Reihenfolge folgt der Updateanleitung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 76
+    },
+    {
+        "id": 77,
+        "category": "Client",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "Installationsanleitung AutiSta Client \/ Downloadverzeichnis \/ S. 41",
+        "type": "ordering",
+        "question": "Ordnen Sie die Fallback-Prüfung des Downloadverzeichnisses.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Übergebenes DOWNLOAD_DIR prüfen"
+            },
+            {
+                "key": "B",
+                "text": "%USERPROFILE%\\Downloads prüfen"
+            },
+            {
+                "key": "C",
+                "text": "%USERPROFILE% direkt prüfen"
+            },
+            {
+                "key": "D",
+                "text": "Downloadverzeichnis auf leeren Pfad setzen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Die Client-Installationsanleitung nennt diese Fallback-Kette.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 77
+    },
+    {
+        "id": 78,
+        "category": "Support",
+        "competency": "Fehlersuche",
+        "difficulty": 4,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Webservice Aufzeichnungen \/ S. 38",
+        "type": "ordering",
+        "question": "Vorgehen bei Webservice-Fehleraufzeichnung: richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Aufzeichnung aktivieren"
+            },
+            {
+                "key": "B",
+                "text": "Fehler reproduzieren"
+            },
+            {
+                "key": "C",
+                "text": "Supportdatei laden"
+            },
+            {
+                "key": "D",
+                "text": "Aufzeichnung umgehend deaktivieren"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Die Dokumentation beschreibt diese Abfolge und warnt vor dauerhafter Aktivierung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 78
+    },
+    {
+        "id": 79,
+        "category": "Fehlersuche",
+        "competency": "Fehlersuche",
+        "difficulty": 4,
+        "document_ref": "VfSt-JBoss-Configurator \/ Erstellung der standalone.xml \/ S. 24",
+        "type": "ordering",
+        "question": "JBoss startet nach Configurator-Lauf nicht: sinnvolle Reihenfolge der Erstdiagnose.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Configurator-Log prüfen"
+            },
+            {
+                "key": "B",
+                "text": "JBoss server.log\/boot.log prüfen"
+            },
+            {
+                "key": "C",
+                "text": "vfst-jboss-config.properties auf offensichtliche Fehler prüfen"
+            },
+            {
+                "key": "D",
+                "text": "Kennwörter vor Weitergabe entfernen"
+            },
+            {
+                "key": "E",
+                "text": "Unterlagen über Ticketsystem übermitteln"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "explanation": "Die Configurator-Doku nennt Logs und Properties; Kennwörter sind vor Übermittlung zu entfernen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 79
+    },
+    {
+        "id": 80,
+        "category": "Administration",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Mandanten \/ S. 30",
+        "type": "ordering",
+        "question": "Mandant entfernen: richtige Reihenfolge laut Admin-Handbuch.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Mandant deaktivieren"
+            },
+            {
+                "key": "B",
+                "text": "Mandant über AutiSta Werkzeuge aus Datenbank löschen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B"
+        ],
+        "explanation": "Ein Mandant ist vor dem Löschen zu deaktivieren.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 80
+    },
+    {
+        "id": 81,
+        "category": "Client",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Startparameter\/Client-Installation \/ Downloadverzeichnis \/ S. 41",
+        "type": "ordering",
+        "question": "Startparameter-Auswertung für Client-Download: richtige Priorität.",
+        "options": [
+            {
+                "key": "A",
+                "text": "DOWNLOAD_DIR aus Startargument"
+            },
+            {
+                "key": "B",
+                "text": "%USERPROFILE%\\Downloads"
+            },
+            {
+                "key": "C",
+                "text": "%USERPROFILE%"
+            },
+            {
+                "key": "D",
+                "text": "Leerer Pfad"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Die Priorität entspricht dem Dokument.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 81
+    },
+    {
+        "id": 82,
+        "category": "Konfiguration",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ jboss-cli.xml \/ S. 25",
+        "type": "ordering",
+        "question": "Portoffset und CLI-Zugriff: richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Portoffset in Properties erkennen"
+            },
+            {
+                "key": "B",
+                "text": "Default-Controller-Port in jboss-cli.xml berechnen\/anpassen"
+            },
+            {
+                "key": "C",
+                "text": "jboss-cli mit angepasstem Port verwenden"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Bei Portoffset muss jboss-cli.xml entsprechend angepasst werden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 82
+    },
+    {
+        "id": 83,
+        "category": "Update",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Updateanleitung AutiSta 13.1 \/ AutiSta Client \/ S. 47",
+        "type": "ordering",
+        "question": "Clientupdate: richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Als Administrator am Client-Rechner anmelden"
+            },
+            {
+                "key": "B",
+                "text": "Ins Clientverzeichnis wechseln"
+            },
+            {
+                "key": "C",
+                "text": "Ordner browser und autista.bat löschen bzw. sichern"
+            },
+            {
+                "key": "D",
+                "text": "Neue Dateien aus AutiStaClient kopieren"
+            },
+            {
+                "key": "E",
+                "text": "autista.bat wieder an Umgebung anpassen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "explanation": "Die Updateanleitung beschreibt diese Schritte.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 83
+    },
+    {
+        "id": 84,
+        "category": "Datenbanken",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Installation und Update der Datenbanken \/ Oracle Update \/ S. 17",
+        "type": "ordering",
+        "question": "Oracle-Update: richtige Reihenfolge.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Als system an der Datenbankinstanz anmelden"
+            },
+            {
+                "key": "B",
+                "text": "Update-Skript update_autista_to_1310_or.sql einspielen"
+            },
+            {
+                "key": "C",
+                "text": "Änderungen gemäß Datenbankwerkzeug abschließen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C"
+        ],
+        "explanation": "Das Dokument fordert Anmeldung als system und Einspielen des Oracle-Update-Skripts.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 84
+    },
+    {
+        "id": 85,
+        "category": "Support",
+        "competency": "Kommunikationsverständnis",
+        "difficulty": 3,
+        "document_ref": "Mehrere Dokumente \/ Support\/Kontaktinformation \/ S. 24",
+        "type": "ordering",
+        "question": "Technische Supportanfrage: richtige Reihenfolge aus Sicht eines guten Supports.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Problem dokumentieren"
+            },
+            {
+                "key": "B",
+                "text": "Relevante Logs\/Supportdaten sammeln"
+            },
+            {
+                "key": "C",
+                "text": "Kennwörter\/sensible Daten vor Weitergabe entfernen"
+            },
+            {
+                "key": "D",
+                "text": "Ticket über vorgesehenen Kanal eröffnen\/ergänzen"
+            }
+        ],
+        "correct_answers": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "explanation": "Die Dokumente verweisen auf Supportdaten, Logdateien, Entfernen von Kennwörtern und Ticketsystem.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 85
+    },
+    {
+        "id": 86,
+        "category": "Dokumentationsverständnis",
+        "competency": "Dokumentationsverständnis",
+        "difficulty": 2,
+        "document_ref": "Alle Dokumente \/ Gesamtstruktur \/ S. 1",
+        "type": "matching",
+        "question": "Ordnen Sie Dokumentation und primären Zweck zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "AutiSta Server Installation Linux"
+                },
+                {
+                    "key": "L2",
+                    "text": "AutiSta-Datenbanken"
+                },
+                {
+                    "key": "L3",
+                    "text": "VfSt-JBoss-Configurator"
+                },
+                {
+                    "key": "L4",
+                    "text": "AutiSta Admin Handbuch"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Weboberfläche für systemweite Administration"
+                },
+                {
+                    "key": "B",
+                    "text": "Einrichtung und Update der Datenbank"
+                },
+                {
+                    "key": "C",
+                    "text": "Installation des Servers unter Linux"
+                },
+                {
+                    "key": "D",
+                    "text": "Erzeugung der JBoss-Konfiguration aus Properties"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "C",
+            "L2": "B",
+            "L3": "D",
+            "L4": "A"
+        },
+        "explanation": "Die Zuordnung entspricht den Dokumenttiteln und Inhalten.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 86
+    },
+    {
+        "id": 87,
+        "category": "Konfiguration",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "VfSt-JBoss-Configurator \/ Properties \/ S. 20",
+        "type": "matching",
+        "question": "Ordnen Sie Property und Bedeutung zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "tls.protocol"
+                },
+                {
+                    "key": "L2",
+                    "text": "root.logger.log.level"
+                },
+                {
+                    "key": "L3",
+                    "text": "db.autista.connection.url"
+                },
+                {
+                    "key": "L4",
+                    "text": "user.inactivity.timeout.minutes"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Timeout der AutiSta Session"
+                },
+                {
+                    "key": "B",
+                    "text": "Vollständiger DB-Connection-String"
+                },
+                {
+                    "key": "C",
+                    "text": "Zu verwendende TLS-Version"
+                },
+                {
+                    "key": "D",
+                    "text": "Loglevel des JBoss-Servers"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "C",
+            "L2": "D",
+            "L3": "B",
+            "L4": "A"
+        },
+        "explanation": "Die Properties werden im Configurator-Dokument erläutert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 87
+    },
+    {
+        "id": 88,
+        "category": "Zertifikate",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation \/ Trust- und Keystore \/ S. 2",
+        "type": "matching",
+        "question": "Ordnen Sie Datei und Inhalt zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "autista.keystore.p12"
+                },
+                {
+                    "key": "L2",
+                    "text": "autista.truststore.p12"
+                },
+                {
+                    "key": "L3",
+                    "text": "autista-server.csr"
+                },
+                {
+                    "key": "L4",
+                    "text": "CA-Zertifikat.crt"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Certificate Signing Request"
+                },
+                {
+                    "key": "B",
+                    "text": "Root-\/Ausstellerzertifikat"
+                },
+                {
+                    "key": "C",
+                    "text": "Server-Schlüsselpaar\/Serverzertifikat"
+                },
+                {
+                    "key": "D",
+                    "text": "Vertrauenswürdige Zertifikate für externe Verbindungen"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "C",
+            "L2": "D",
+            "L3": "A",
+            "L4": "B"
+        },
+        "explanation": "Die Installationsanleitungen erklären Keystore, Truststore, CSR und CA-Zertifikat.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 88
+    },
+    {
+        "id": 89,
+        "category": "Datenbanken",
+        "competency": "Technisches Verständnis",
+        "difficulty": 3,
+        "document_ref": "Installation und Update der Datenbanken \/ Oracle\/MSSQL \/ S. 17",
+        "type": "matching",
+        "question": "Ordnen Sie Datenbanksystem und Skript\/Anforderung zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "Oracle Neuinstallation"
+                },
+                {
+                    "key": "L2",
+                    "text": "Oracle Update"
+                },
+                {
+                    "key": "L3",
+                    "text": "MSSQL Neuinstallation Datenbank"
+                },
+                {
+                    "key": "L4",
+                    "text": "MSSQL Update"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "update_autista_to_1310_ms.sql"
+                },
+                {
+                    "key": "B",
+                    "text": "create_autista_struct_or.sql"
+                },
+                {
+                    "key": "C",
+                    "text": "create_autista_db_ms.sql"
+                },
+                {
+                    "key": "D",
+                    "text": "update_autista_to_1310_or.sql"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "B",
+            "L2": "D",
+            "L3": "C",
+            "L4": "A"
+        },
+        "explanation": "Die Skriptzuordnung folgt dem Datenbankdokument.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 89
+    },
+    {
+        "id": 90,
+        "category": "Admin",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Konfiguration\/System \/ S. 30",
+        "type": "matching",
+        "question": "Ordnen Sie Admin-Bereich und Funktion zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "Mandanten"
+                },
+                {
+                    "key": "L2",
+                    "text": "Proxys"
+                },
+                {
+                    "key": "L3",
+                    "text": "Technischer Benutzer"
+                },
+                {
+                    "key": "L4",
+                    "text": "Systeminformation"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Abgleich mandantenübergreifender Informationen mit dem Registerverfahren"
+                },
+                {
+                    "key": "B",
+                    "text": "Aktive Standesämter verwalten"
+                },
+                {
+                    "key": "C",
+                    "text": "Aufbau und Komponenten des Gesamtsystems anzeigen"
+                },
+                {
+                    "key": "D",
+                    "text": "Kommunikation mit externen Drittsystemen über Proxy ermöglichen"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "B",
+            "L2": "D",
+            "L3": "A",
+            "L4": "C"
+        },
+        "explanation": "Alle Funktionen werden im Admin-Handbuch beschrieben.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 90
+    },
+    {
+        "id": 91,
+        "category": "Support",
+        "competency": "Fehlersuche",
+        "difficulty": 3,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Support \/ S. 38",
+        "type": "matching",
+        "question": "Ordnen Sie Datei\/Bereich und Diagnosezweck zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "server.log"
+                },
+                {
+                    "key": "L2",
+                    "text": "boot.log"
+                },
+                {
+                    "key": "L3",
+                    "text": "Supportdaten"
+                },
+                {
+                    "key": "L4",
+                    "text": "Clientlogs"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Startvorgang des JBoss-Applikationsservers"
+                },
+                {
+                    "key": "B",
+                    "text": "Filterung nach Benutzerkennung oder Arbeitsplatzname"
+                },
+                {
+                    "key": "C",
+                    "text": "Störungen während des Betriebs"
+                },
+                {
+                    "key": "D",
+                    "text": "Technische Informationen für Störungsanalyse sammeln"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "C",
+            "L2": "A",
+            "L3": "D",
+            "L4": "B"
+        },
+        "explanation": "Das Supportkapitel beschreibt diese Diagnosequellen.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 91
+    },
+    {
+        "id": 92,
+        "category": "Client",
+        "competency": "Systemadministration",
+        "difficulty": 3,
+        "document_ref": "Startparameter für AutiSta \/ Client-Parameter \/ S. 44",
+        "type": "matching",
+        "question": "Ordnen Sie Client-Parameter und Funktion zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "DOWNLOAD_DIR"
+                },
+                {
+                    "key": "L2",
+                    "text": "ARBEITSPLATZNAME"
+                },
+                {
+                    "key": "L3",
+                    "text": "BENUTZERNAME"
+                },
+                {
+                    "key": "L4",
+                    "text": "SCAN_TIMEOUT"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Eindeutiger Benutzer für benutzerspezifische Einstellungen"
+                },
+                {
+                    "key": "B",
+                    "text": "Downloadablage"
+                },
+                {
+                    "key": "C",
+                    "text": "Abbruchzeit für Scanvorgang"
+                },
+                {
+                    "key": "D",
+                    "text": "Eindeutiger Arbeitsplatz für Arbeitsplatz-Eigenschaften"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "B",
+            "L2": "D",
+            "L3": "A",
+            "L4": "C"
+        },
+        "explanation": "Die Startparameter-Dokumentation erklärt die Parameter.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 92
+    },
+    {
+        "id": 93,
+        "category": "Monitoring",
+        "competency": "Fehlersuche",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Systemüberwachung \/ S. 36",
+        "type": "matching",
+        "question": "Ordnen Sie Ampelfarbe und Bedeutung zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "Grün"
+                },
+                {
+                    "key": "L2",
+                    "text": "Gelb"
+                },
+                {
+                    "key": "L3",
+                    "text": "Rot"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Akut zu bearbeitendes Problem"
+                },
+                {
+                    "key": "B",
+                    "text": "Bereich sollte geprüft werden"
+                },
+                {
+                    "key": "C",
+                    "text": "Keine Störung"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "C",
+            "L2": "B",
+            "L3": "A"
+        },
+        "explanation": "Die Systemüberwachung definiert die Ampelfarben.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 93
+    },
+    {
+        "id": 94,
+        "category": "Update",
+        "competency": "Dokumentationsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta 13.1 T-IzA \/ Technische Informationen \/ S. 50",
+        "type": "matching",
+        "question": "Ordnen Sie T-IzA-Abschnitt und Aussage zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "Installationstermin"
+                },
+                {
+                    "key": "L2",
+                    "text": "Neuinstallation JBoss 8.1.4"
+                },
+                {
+                    "key": "L3",
+                    "text": "Java"
+                },
+                {
+                    "key": "L4",
+                    "text": "Reader Service XTA2"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "Java 17.0.18 wird eingesetzt"
+                },
+                {
+                    "key": "B",
+                    "text": "Update bis spätestens 1.5.2026"
+                },
+                {
+                    "key": "C",
+                    "text": "Fester xta2.webservice.port wird ohne Offset verwendet"
+                },
+                {
+                    "key": "D",
+                    "text": "Kein Patchmechanismus, Neuinstallation erforderlich"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "B",
+            "L2": "D",
+            "L3": "A",
+            "L4": "C"
+        },
+        "explanation": "Die T-IzA nennt diese technischen Hinweise.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 94
+    },
+    {
+        "id": 95,
+        "category": "Architektur",
+        "competency": "Architekturverständnis",
+        "difficulty": 4,
+        "document_ref": "AutiSta Admin Handbuch; Datenbanken \/ Einleitung \/ S. 28",
+        "type": "matching",
+        "question": "Ordnen Sie Ebene und primäre Konfigurationsstelle zu.",
+        "options": {
+            "left": [
+                {
+                    "key": "L1",
+                    "text": "Mandantenspezifische Hardware im Standesamt"
+                },
+                {
+                    "key": "L2",
+                    "text": "Technische Serverkonfiguration"
+                },
+                {
+                    "key": "L3",
+                    "text": "Systemweite AutiSta-Einstellungen"
+                },
+                {
+                    "key": "L4",
+                    "text": "Datenbankinstallation"
+                }
+            ],
+            "answers": [
+                {
+                    "key": "A",
+                    "text": "AutiSta Client"
+                },
+                {
+                    "key": "B",
+                    "text": "Konfigurationsdateien\/JBoss-Configurator"
+                },
+                {
+                    "key": "C",
+                    "text": "AutiSta Admin"
+                },
+                {
+                    "key": "D",
+                    "text": "AutiSta-Datenbanken-Dokument\/DBA"
+                }
+            ]
+        },
+        "correct_answers": {
+            "L1": "A",
+            "L2": "B",
+            "L3": "C",
+            "L4": "D"
+        },
+        "explanation": "Das Admin-Handbuch beschreibt die Trennung der Administrationsorte; Datenbanken sind gesondert dokumentiert.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 95
+    },
+    {
+        "id": 96,
+        "category": "TLS",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 2,
+        "document_ref": "VfSt-JBoss-Configurator \/ System Properties \/ S. 20",
+        "type": "true_false",
+        "question": "Die Property tls.protocol beeinflusst laut Configurator-Dokument auch direkt die TLS-Kommunikation mit XTA2 und mod_cluster Loadbalancer.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Wahr"
+            },
+            {
+                "key": "B",
+                "text": "Falsch"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Für XTA2 und Loadbalancer gibt es eigene Properties; tls.protocol beeinflusst sie nicht direkt.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 96
+    },
+    {
+        "id": 97,
+        "category": "Client",
+        "competency": "Technisches Verständnis",
+        "difficulty": 2,
+        "document_ref": "Installationsanleitung AutiSta Client \/ Systemvoraussetzungen \/ S. 40",
+        "type": "true_false",
+        "question": "Der AutiSta Server muss vom Terminalserver erreichbar sein, damit der Client betrieben werden kann.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Wahr"
+            },
+            {
+                "key": "B",
+                "text": "Falsch"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Die Client-Installationsanleitung nennt dies als Systemvoraussetzung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 97
+    },
+    {
+        "id": 98,
+        "category": "Update",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "Updateanleitung AutiSta 13.1 \/ Updateinformationen übermitteln \/ S. 49",
+        "type": "true_false",
+        "question": "Nach der Aktualisierung sollen Updateinformationen an den Verlag übermittelt werden.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Wahr"
+            },
+            {
+                "key": "B",
+                "text": "Falsch"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Installations- und Updateanleitungen nennen die Übermittlung nach Aktualisierung.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 98
+    },
+    {
+        "id": 99,
+        "category": "Sicherheit",
+        "competency": "Sicherheitsverständnis",
+        "difficulty": 3,
+        "document_ref": "AutiSta Server Installation Linux\/Windows \/ Credential Store erstellen \/ S. 4",
+        "type": "true_false",
+        "question": "Das Kennwort des Credential Stores soll laut Dokumentation identisch mit dem Datenbankkennwort sein.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Wahr"
+            },
+            {
+                "key": "B",
+                "text": "Falsch"
+            }
+        ],
+        "correct_answers": [
+            "B"
+        ],
+        "explanation": "Die Dokumentation weist ausdrücklich darauf hin, nicht das Datenbankkennwort zu verwenden.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 99
+    },
+    {
+        "id": 100,
+        "category": "Administration",
+        "competency": "Systemadministration",
+        "difficulty": 2,
+        "document_ref": "AutiSta Admin 13.1 Handbuch \/ Serveradministratoren \/ S. 31",
+        "type": "true_false",
+        "question": "Serveradministratoren in AutiSta Admin können mit unterschiedlichen Zugriffsberechtigungen definiert werden.",
+        "options": [
+            {
+                "key": "A",
+                "text": "Wahr"
+            },
+            {
+                "key": "B",
+                "text": "Falsch"
+            }
+        ],
+        "correct_answers": [
+            "A"
+        ],
+        "explanation": "Das Admin-Handbuch beschreibt unterschiedliche Zugriffsberechtigungen für Serveradministratoren.",
+        "points": 1,
+        "active": 1,
+        "sort_order": 100
+    }
+]
