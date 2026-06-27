@@ -27,6 +27,25 @@ Dann öffnen:
 
 Im Netzwerk ersetzen Sie `localhost` durch die IP-Adresse des Rechners.
 
+## Start mit Docker
+
+Image bauen und Container starten:
+
+```bash
+docker compose up -d --build
+```
+
+Dann öffnen:
+
+`http://localhost:8080/`
+
+Die SQLite-Datenbank, Logs und Backups liegen im Docker-Volume `autista-storage`.
+Container stoppen:
+
+```bash
+docker compose down
+```
+
 ## Admin
 
 Initial:

@@ -1,0 +1,21 @@
+.git
+.gitignore
+
+# Runtime data must live in Docker volumes, not in the image.
+storage/*.sqlite
+storage/backups/*
+storage/logs/*
+!storage/backups/.gitkeep
+!storage/logs/.gitkeep
+
+# Local/editor files
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
