@@ -1,5 +1,7 @@
 # AutiSta Bewerbertest
 
+Technische Einstiegshilfe fuer die Weiterentwicklung: [`docs/PROJECT_GUIDE.md`](docs/PROJECT_GUIDE.md)
+
 PHP/SQLite-Anwendung für einen 30-Minuten-Bewerbertest im lokalen Netzwerk.
 
 ## Start unter XAMPP/Apache
